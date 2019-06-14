@@ -1,0 +1,68 @@
+columna,Descripcion,Tipo,Requerido,Opciones
+attribute_set_code,Agrupaci—n del Producto,Filtrable,Si,sala| recamaras
+product_type,Clasificaci—n del Producto,Filtrable,Si,simple | configurable
+categories,Categorias del Producto.,Filtrable,Si,Especificadas en Categorias de Producto
+product_websites,Indica wl website,Constante,Si,base
+name,Nombre del producto,Requerido,Si,
+description,Descripci—n del producto,Requerido,Si,
+short_description,Descripci—n resumida del producto,Requerido,Si,
+weight,Peso del producto,Requerido,Si,
+visibility,Visibilidad en el website,Filtrable,Si,"Catalog, Search"
+price,Precio del producto,Requerido,Si,
+color,Color del producto,Filtrable,,
+country_of_manufacture,Pais de Elaboraci—n,Filtrable,,
+special_price,Precio rebajado o Especial,Opcional,,
+special_price_from_date,Fecha inicial de rebaja,Opcional,,
+special_price_to_date,Fecha Final de Rebaja,Opcional,,
+base_image,Nombre de la Imagen principal,Requerido,Si,
+small_image,Nombre de la Imagen principal tama–o reducido,Opcional,,
+thumbnail_image,Nombre de la Imagen previa,Opcional,,
+swatch_image,Nombre de la Imagen previa,Opcional,,
+additional_images,Nombre de otras imagenes,Opcional,,"Imagenes deben ir separadas por comas (,)"
+qty,Cantidad de Inventario,Requerido,Si,
+configurable_variations,"Skus de variaciones separadas por comas (,)",Opcional/Requerido,,Requerido en caso de ser producto configurable
+related_skus,"Skus productos relacionados separadas por comas (,)",Opcional,,
+crosssell_skus,"Skus de productos relacionados relacionados separadas por comas (,)",Opcional,,
+upsell_skus,"Skus de productos relacionados separadas por comas (,)",Opcional,,
+associated_skus,"Skus de productos asociados separadas por comas (,)",Opcional,,
+tm_display_long,Exhibici—n Largo/cm,Opcional,,
+tm_display_width,Exhibici—n Ancho/cm,Opcional,,
+tm_display_high,Exhibici—n Altura/cm,Opcional,,
+tm_display_depth,Exhibici—n Profundidad/cm,Opcional,,
+tm_back_type,Tipo de Respaldo,Opcional,,
+tm_back_material,Material Respaldo,Opcional,,
+tm_headboard_type,Tipo de Cabecera,Opcional,,
+tm_headboard_material,Material Cabecera,Opcional,,
+tm_material,Material,Opcional/Filtrable,,tela| piel|microfibra| lino
+tm_leg_shape,Forma Pata,Opcional,,
+tm_leg_finished,Acabado Pata,Opcional,,
+tm_warranty,Garant’a,Opcional,,
+tm_warranty_leg,Terminos de Garantia,Opcional,,
+tm_brand,Marca,Opcional/Filtrable,,Por Defiir
+tm_style,Estilo,Opcional/Filtrable,,clasico| rustico| contemporaneo| moderno| minimalista| diconomia| vintage| mid century
+tm_product_benefits,Beneficios del Producto,Opcional,,
+tm_include,Incluye,Opcional,,
+rm_care,Cuidados,Opcional,,
+tm_delivery_time,Tiempo de entrega,Opcional,,
+tm_capacity,Capacidad,Opcional/Filtrable,,2 personas |2 personas | 3 personas | 4 personas | 5 personas 
+tm_confort,Confort,Opcional/Filtrable,,flex| semiflex| firme
+tm_include_not,No incluye,Opcional,,
+tm_number_pieces,Numero de Piezas,Opcional,,
+tm_require_assembly,Requiere armado?,Opcional,,
+tm_watts,Watts,Opcional,,
+tm_voltage,Voltaje,Opcional,,
+tm_shape,Forma ,Opcional/Filtrable,,ovalda|circular| cuadrada
+tm_use_type,Tipo Uso,Opcional/Filtrable,,Por Definir
+tm_size,Tama–o,Opcional/Filtrable,,chico| mediano|grande| individual| matrimonial| king size| queen size
+tm_cushion,Cojines,Opcional,,
+tm_package_long,Largo con empaque,Opcional,,
+tm_package_height,alto con empaque,Opcional,,
+tm_package_width,ancho con empaque,Opcional,,
+tm_tech_type,Tipo Resorte/Tecnolog’a,Opcional/Filtrable,,Por Definir
+tm_tech_description,Descripci—n Tipo Resorte,Opcional,,
+tm_usage,Uso Recomendado,Opcional,,
+tm_threads_numbers,Numero de Hilos,Opcional,,
+tm_grammage,Gramaje,Opcional,,
+tm_finished_details,Detalles Terminado,Opcional,,
+tm_max_capacity,Capacidad M‡xima  TV,Opcional,,
+tm_recommended_age,Edad Recomendada,Opcional,,.

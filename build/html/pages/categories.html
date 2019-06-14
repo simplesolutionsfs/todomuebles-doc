@@ -1,0 +1,804 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Categorías de Productos &mdash; documentación de Todomuebles - 1.0.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Importación De Productos" href="import.html" />
+    <link rel="prev" title="Atributos / Headers" href="attributes.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Todomuebles
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="attributes.html">Atributos / Headers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Categorías de Productos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lista-de-categorias">Lista de Categorias.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="import.html">Importación De Productos</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Todomuebles</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Categorías de Productos</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/pages/categories.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="categorias-de-productos">
+<span id="category-page-label"></span><h1>Categorías de Productos<a class="headerlink" href="#categorias-de-productos" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Las Categorias son La clasificacion de los productos en Todomuebles.com, esto ayuda al comprador a encontrar el producto de una manera más facil y lógica. Cada producto que se importe al marketplace debe tener sus categorias correspondientes.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p>Para poder asignar las categorias a un producto puedes usar la tabla de abajo para entender a que categorias puede pertenecer.</p>
+<p>Las categorias van en la columna <strong>categories</strong> en el archivo de importación. y separados por comas ( <strong>,</strong> ) para agregar multiples categorías.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><em>Default Category/Muebles,Default Category/Muebles/Sala,Default Category/Muebles/Sala/Reclinables,Default Category/Muebles/Sala/Sillones Ocasionales</em></p>
+<p class="last">Este path asignara al producto las categorías de <strong>Default Category</strong>, <strong>Muebles</strong>, <strong>Sala</strong>, <strong>Reclinables</strong> y <strong>Sillones Ocasionales</strong></p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Advertencia</p>
+<p class="last"><strong>Default</strong> Category es la categoria padre de todas las categorias, esta es la que se utiliza para agrupar las otras categorias y poder filtrar todos los productos del catalogo</p>
+</div>
+<div class="section" id="lista-de-categorias">
+<h2>Lista de Categorias.<a class="headerlink" href="#lista-de-categorias" title="Enlazar permanentemente con este título">¶</a></h2>
+<table border="1" class="colwidths-given docutils" id="id1">
+<caption><span class="caption-text">Lista de categorias</span><a class="headerlink" href="#id1" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="10%" />
+<col width="30%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">code</th>
+<th class="head">name</th>
+<th class="head">path</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>2</td>
+<td>Default Category</td>
+<td>Default Category</td>
+</tr>
+<tr class="row-odd"><td>3</td>
+<td>Muebles</td>
+<td>Default Category/Muebles</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>Sala</td>
+<td>Default Category/Muebles/Sala</td>
+</tr>
+<tr class="row-odd"><td>5</td>
+<td>Modulares</td>
+<td>Default Category/Muebles/Sala/Modulares</td>
+</tr>
+<tr class="row-even"><td>6</td>
+<td>Salas en L</td>
+<td>Default Category/Muebles/Sala/Salas en L</td>
+</tr>
+<tr class="row-odd"><td>7</td>
+<td>Sof+B10 3 plazas</td>
+<td>Default Category/Muebles/Sala/Sofá 3 plazas</td>
+</tr>
+<tr class="row-even"><td>8</td>
+<td>Love Seat 2 plazas</td>
+<td>Default Category/Muebles/Sala/Love Seat 2 plazas</td>
+</tr>
+<tr class="row-odd"><td>9</td>
+<td>Sofá cama</td>
+<td>Default Category/Muebles/Sala/Sofá cama</td>
+</tr>
+<tr class="row-even"><td>10</td>
+<td>Reclinables</td>
+<td>Default Category/Muebles/Sala/Reclinables</td>
+</tr>
+<tr class="row-odd"><td>11</td>
+<td>Sillones Ocasionales</td>
+<td>Default Category/Muebles/Sala/Sillones Ocasionales</td>
+</tr>
+<tr class="row-even"><td>12</td>
+<td>Puff y Ottoman</td>
+<td>Default Category/Muebles/Sala/Puff y Ottoman</td>
+</tr>
+<tr class="row-odd"><td>13</td>
+<td>Recamaras</td>
+<td>Default Category/Muebles/Recamaras</td>
+</tr>
+<tr class="row-even"><td>14</td>
+<td>Colecciones</td>
+<td>Default Category/Muebles/Recamaras/Colecciones</td>
+</tr>
+<tr class="row-odd"><td>15</td>
+<td>Camas</td>
+<td>Default Category/Muebles/Recamaras/Camas</td>
+</tr>
+<tr class="row-even"><td>16</td>
+<td>Cabeceras</td>
+<td>Default Category/Muebles/Recamaras/Cabeceras</td>
+</tr>
+<tr class="row-odd"><td>17</td>
+<td>Burós</td>
+<td>Default Category/Muebles/Recamaras/Burós</td>
+</tr>
+<tr class="row-even"><td>18</td>
+<td>Cajoneras</td>
+<td>Default Category/Muebles/Recamaras/Cajoneras</td>
+</tr>
+<tr class="row-odd"><td>19</td>
+<td>Armario/Closet</td>
+<td>Default Category/Muebles/Recamaras/Armario/Closet</td>
+</tr>
+<tr class="row-even"><td>20</td>
+<td>Base de Cama</td>
+<td>Default Category/Muebles/Recamaras/Base de Cama</td>
+</tr>
+<tr class="row-odd"><td>21</td>
+<td>Complementos (Banca piecera)</td>
+<td>Default Category/Muebles/Recamaras/Complementos (Banca piecera)</td>
+</tr>
+<tr class="row-even"><td>22</td>
+<td>Comedores</td>
+<td>Default Category/Muebles/Comedores</td>
+</tr>
+<tr class="row-odd"><td>23</td>
+<td>Comedores</td>
+<td>Default Category/Muebles/Comedores/Comedores</td>
+</tr>
+<tr class="row-even"><td>24</td>
+<td>Antecomedores</td>
+<td>Default Category/Muebles/Comedores/Antecomedores</td>
+</tr>
+<tr class="row-odd"><td>25</td>
+<td>Mesas</td>
+<td>Default Category/Muebles/Comedores/Mesas</td>
+</tr>
+<tr class="row-even"><td>26</td>
+<td>Sillas</td>
+<td>Default Category/Muebles/Comedores/Sillas</td>
+</tr>
+<tr class="row-odd"><td>27</td>
+<td>Aparador/Vitrina</td>
+<td>Default Category/Muebles/Comedores/Aparador/Vitrina</td>
+</tr>
+<tr class="row-even"><td>28</td>
+<td>Bancos</td>
+<td>Default Category/Muebles/Comedores/Bancos</td>
+</tr>
+<tr class="row-odd"><td>29</td>
+<td>Cantinas</td>
+<td>Default Category/Muebles/Comedores/Cantinas</td>
+</tr>
+<tr class="row-even"><td>30</td>
+<td>Cocinas</td>
+<td>Default Category/Muebles/Cocinas</td>
+</tr>
+<tr class="row-odd"><td>31</td>
+<td>Cocina 1.70mts</td>
+<td>Default Category/Muebles/Cocinas/Cocina 1.70mts</td>
+</tr>
+<tr class="row-even"><td>32</td>
+<td>Cocina 2.00mts</td>
+<td>Default Category/Muebles/Cocinas/Cocina 2.00mts</td>
+</tr>
+<tr class="row-odd"><td>33</td>
+<td>Cocina Escuadra</td>
+<td>Default Category/Muebles/Cocinas/Cocina Escuadra</td>
+</tr>
+<tr class="row-even"><td>34</td>
+<td>Islas</td>
+<td>Default Category/Muebles/Cocinas/Islas</td>
+</tr>
+<tr class="row-odd"><td>35</td>
+<td>Despenseros</td>
+<td>Default Category/Muebles/Cocinas/Despenseros</td>
+</tr>
+<tr class="row-even"><td>36</td>
+<td>Alacenas</td>
+<td>Default Category/Muebles/Cocinas/Alacenas</td>
+</tr>
+<tr class="row-odd"><td>37</td>
+<td>Estudio</td>
+<td>Default Category/Muebles/Estudio</td>
+</tr>
+<tr class="row-even"><td>38</td>
+<td>Escritorios</td>
+<td>Default Category/Muebles/Estudio/Escritorios</td>
+</tr>
+<tr class="row-odd"><td>39</td>
+<td>Libreros</td>
+<td>Default Category/Muebles/Estudio/Libreros</td>
+</tr>
+<tr class="row-even"><td>40</td>
+<td>Sillas</td>
+<td>Default Category/Muebles/Estudio/Sillas</td>
+</tr>
+<tr class="row-odd"><td>41</td>
+<td>Sillones Ocasionales</td>
+<td>Default Category/Muebles/Estudio/Sillones Ocasionales</td>
+</tr>
+<tr class="row-even"><td>42</td>
+<td>Complementos</td>
+<td>Default Category/Muebles/Complementos</td>
+</tr>
+<tr class="row-odd"><td>43</td>
+<td>Mesas Laterales</td>
+<td>Default Category/Muebles/Complementos/Mesas Laterales</td>
+</tr>
+<tr class="row-even"><td>44</td>
+<td>Mesas de Centro</td>
+<td>Default Category/Muebles/Complementos/Mesas de Centro</td>
+</tr>
+<tr class="row-odd"><td>45</td>
+<td>Percheros</td>
+<td>Default Category/Muebles/Complementos/Percheros</td>
+</tr>
+<tr class="row-even"><td>46</td>
+<td>Revisteros</td>
+<td>Default Category/Muebles/Complementos/Revisteros</td>
+</tr>
+<tr class="row-odd"><td>47</td>
+<td>Mesas de TV</td>
+<td>Default Category/Muebles/Complementos/Mesas de TV</td>
+</tr>
+<tr class="row-even"><td>48</td>
+<td>Colchones</td>
+<td>Default Category/Colchones</td>
+</tr>
+<tr class="row-odd"><td>49</td>
+<td>Marca</td>
+<td>Default Category/Muebles/Marca</td>
+</tr>
+<tr class="row-even"><td>50</td>
+<td>Spring Air</td>
+<td>Default Category/Muebles/Marca/Spring Air</td>
+</tr>
+<tr class="row-odd"><td>51</td>
+<td>Sealy</td>
+<td>Default Category/Muebles/Marca/Sealy</td>
+</tr>
+<tr class="row-even"><td>52</td>
+<td>America</td>
+<td>Default Category/Muebles/Marca/America</td>
+</tr>
+<tr class="row-odd"><td>53</td>
+<td>Restonic</td>
+<td>Default Category/Muebles/Marca/Restonic</td>
+</tr>
+<tr class="row-even"><td>54</td>
+<td>Confort</td>
+<td>Default Category/Muebles/Confort</td>
+</tr>
+<tr class="row-odd"><td>55</td>
+<td>Firme</td>
+<td>Default Category/Muebles/Confort/Firme</td>
+</tr>
+<tr class="row-even"><td>56</td>
+<td>Semiflex</td>
+<td>Default Category/Muebles/Confort/Semiflex</td>
+</tr>
+<tr class="row-odd"><td>57</td>
+<td>Flex</td>
+<td>Default Category/Muebles/Confort/Flex</td>
+</tr>
+<tr class="row-even"><td>58</td>
+<td>Complementos</td>
+<td>Default Category/Muebles/Complementos</td>
+</tr>
+<tr class="row-odd"><td>59</td>
+<td>Almohada</td>
+<td>Default Category/Muebles/Complementos/Almohada</td>
+</tr>
+<tr class="row-even"><td>60</td>
+<td>Cubre colchon</td>
+<td>Default Category/Muebles/Complementos/Cubre colchon</td>
+</tr>
+<tr class="row-odd"><td>61</td>
+<td>Almacenamiento</td>
+<td>Default Category/Almacenamiento</td>
+</tr>
+<tr class="row-even"><td>62</td>
+<td>Por Tipo</td>
+<td>Default Category/Almacenamiento/Por Tipo</td>
+</tr>
+<tr class="row-odd"><td>63</td>
+<td>Estantes</td>
+<td>Default Category/Almacenamiento/Por Tipo/Estantes</td>
+</tr>
+<tr class="row-even"><td>64</td>
+<td>Cajoneras</td>
+<td>Default Category/Almacenamiento/Por Tipo/Cajoneras</td>
+</tr>
+<tr class="row-odd"><td>65</td>
+<td>Closets</td>
+<td>Default Category/Almacenamiento/Por Tipo/Closets</td>
+</tr>
+<tr class="row-even"><td>66</td>
+<td>Cesto</td>
+<td>Default Category/Almacenamiento/Por Tipo/Cesto</td>
+</tr>
+<tr class="row-odd"><td>67</td>
+<td>Por Area</td>
+<td>Default Category/Almacenamiento/Por Area</td>
+</tr>
+<tr class="row-even"><td>68</td>
+<td>Recamara</td>
+<td>Default Category/Almacenamiento/Por Area/Recamara</td>
+</tr>
+<tr class="row-odd"><td>69</td>
+<td>Sala</td>
+<td>Default Category/Almacenamiento/Por Area/Sala</td>
+</tr>
+<tr class="row-even"><td>70</td>
+<td>Lavanderia</td>
+<td>Default Category/Almacenamiento/Por Area/Lavanderia</td>
+</tr>
+<tr class="row-odd"><td>71</td>
+<td>Cocina</td>
+<td>Default Category/Almacenamiento/Por Area/Cocina</td>
+</tr>
+<tr class="row-even"><td>72</td>
+<td>Estudio</td>
+<td>Default Category/Almacenamiento/Por Area/Estudio</td>
+</tr>
+<tr class="row-odd"><td>73</td>
+<td>Blancos</td>
+<td>Default Category/Blancos</td>
+</tr>
+<tr class="row-even"><td>74</td>
+<td>Blancos</td>
+<td>Default Category/Blancos/Blancos</td>
+</tr>
+<tr class="row-odd"><td>75</td>
+<td>Edredones</td>
+<td>Default Category/Blancos/Edredones</td>
+</tr>
+<tr class="row-even"><td>76</td>
+<td>Sabanas</td>
+<td>Default Category/Blancos/Sabanas</td>
+</tr>
+<tr class="row-odd"><td>77</td>
+<td>Almohadas Decorativas</td>
+<td>Default Category/Blancos/Almohadas Decorativas</td>
+</tr>
+<tr class="row-even"><td>78</td>
+<td>Almohadas</td>
+<td>Default Category/Blancos/Almohadas</td>
+</tr>
+<tr class="row-odd"><td>79</td>
+<td>Decoración</td>
+<td>Default Category/Decoración</td>
+</tr>
+<tr class="row-even"><td>80</td>
+<td>Home</td>
+<td>Default Category/Decoración/Home</td>
+</tr>
+<tr class="row-odd"><td>81</td>
+<td>Esculturas</td>
+<td>Default Category/Decoración/Home/Esculturas</td>
+</tr>
+<tr class="row-even"><td>82</td>
+<td>Jarrones</td>
+<td>Default Category/Decoración/Home/Jarrones</td>
+</tr>
+<tr class="row-odd"><td>83</td>
+<td>Cajas Decorativas</td>
+<td>Default Category/Decoración/Home/Cajas Decorativas</td>
+</tr>
+<tr class="row-even"><td>84</td>
+<td>Reloj</td>
+<td>Default Category/Decoración/Home/Reloj</td>
+</tr>
+<tr class="row-odd"><td>85</td>
+<td>Tapetes</td>
+<td>Default Category/Decoración/Home/Tapetes</td>
+</tr>
+<tr class="row-even"><td>86</td>
+<td>Portaretratos</td>
+<td>Default Category/Decoración/Home/Portaretratos</td>
+</tr>
+<tr class="row-odd"><td>87</td>
+<td>Portavelas</td>
+<td>Default Category/Decoración/Home/Portavelas</td>
+</tr>
+<tr class="row-even"><td>88</td>
+<td>Letras decorativas</td>
+<td>Default Category/Decoración/Home/Letras decorativas</td>
+</tr>
+<tr class="row-odd"><td>90</td>
+<td>Alcancías</td>
+<td>Default Category/Decoración/Home/Alcancías</td>
+</tr>
+<tr class="row-even"><td>91</td>
+<td>Macetas</td>
+<td>Default Category/Decoración/Home/Macetas</td>
+</tr>
+<tr class="row-odd"><td>92</td>
+<td>Wall Art + Espejos</td>
+<td>Default Category/Decoración/Wall Art + Espejos</td>
+</tr>
+<tr class="row-even"><td>93</td>
+<td>Cuadros</td>
+<td>Default Category/Decoración/Wall Art + Espejos/Cuadros</td>
+</tr>
+<tr class="row-odd"><td>94</td>
+<td>Espejos de Pie</td>
+<td>Default Category/Decoración/Wall Art + Espejos/Espejos de Pie</td>
+</tr>
+<tr class="row-even"><td>95</td>
+<td>Espejos de Pared</td>
+<td>Default Category/Decoración/Wall Art + Espejos/Espejos de Pared</td>
+</tr>
+<tr class="row-odd"><td>96</td>
+<td>Iluminación</td>
+<td>Default Category/Iluminación</td>
+</tr>
+<tr class="row-even"><td>97</td>
+<td>Todas las Lamparas</td>
+<td>Default Category/Iluminación/Todas las Lamparas</td>
+</tr>
+<tr class="row-odd"><td>98</td>
+<td>Colecciones</td>
+<td>Default Category/Iluminación/Colecciones</td>
+</tr>
+<tr class="row-even"><td>99</td>
+<td>Candiles</td>
+<td>Default Category/Iluminación/Candiles</td>
+</tr>
+<tr class="row-odd"><td>100</td>
+<td>Lamparas de Pie</td>
+<td>Default Category/Iluminación/Lamparas de Pie</td>
+</tr>
+<tr class="row-even"><td>101</td>
+<td>Lamparas de Mesa</td>
+<td>Default Category/Iluminación/Lamparas de Mesa</td>
+</tr>
+<tr class="row-odd"><td>102</td>
+<td>Lamparas de Pared</td>
+<td>Default Category/Iluminación/Lamparas de Pared</td>
+</tr>
+<tr class="row-even"><td>103</td>
+<td>Lampras de Jardín</td>
+<td>Default Category/Iluminación/Lampras de Jardín</td>
+</tr>
+<tr class="row-odd"><td>104</td>
+<td>Compra por Categoría</td>
+<td>Default Category/Iluminación/Compra por Categoría</td>
+</tr>
+<tr class="row-even"><td>105</td>
+<td>Cocina</td>
+<td>Default Category/Cocina</td>
+</tr>
+<tr class="row-odd"><td>106</td>
+<td>Compra por Categoría</td>
+<td>Default Category/Cocina/Compra por Categoría</td>
+</tr>
+<tr class="row-even"><td>107</td>
+<td>Vajillas</td>
+<td>Default Category/Cocina/Compra por Categoría/Vajillas</td>
+</tr>
+<tr class="row-odd"><td>108</td>
+<td>Manteleria</td>
+<td>Default Category/Cocina/Compra por Categoría/Manteleria</td>
+</tr>
+<tr class="row-even"><td>109</td>
+<td>Cristaleria</td>
+<td>Default Category/Cocina/Compra por Categoría/Cristaleria</td>
+</tr>
+<tr class="row-odd"><td>110</td>
+<td>Utensilios</td>
+<td>Default Category/Cocina/Compra por Categoría/Utensilios</td>
+</tr>
+<tr class="row-even"><td>111</td>
+<td>Café y Té</td>
+<td>Default Category/Cocina/Compra por Categoría/Café y Té</td>
+</tr>
+<tr class="row-odd"><td>112</td>
+<td>Repostería</td>
+<td>Default Category/Cocina/Compra por Categoría/Repostería</td>
+</tr>
+<tr class="row-even"><td>113</td>
+<td>Jardin</td>
+<td>Default Category/Jardin</td>
+</tr>
+<tr class="row-odd"><td>114</td>
+<td>Muebles</td>
+<td>Default Category/Jardin/Muebles</td>
+</tr>
+<tr class="row-even"><td>115</td>
+<td>Todos los Muebles</td>
+<td>Default Category/Jardin/Muebles/Todos los Muebles</td>
+</tr>
+<tr class="row-odd"><td>116</td>
+<td>Salas de Jardín</td>
+<td>Default Category/Jardin/Muebles/Salas de Jardín</td>
+</tr>
+<tr class="row-even"><td>117</td>
+<td>Comedores de Jardín</td>
+<td>Default Category/Jardin/Muebles/Comedores de Jardín</td>
+</tr>
+<tr class="row-odd"><td>118</td>
+<td>Sillas y Sillones de Jardín</td>
+<td>Default Category/Jardin/Muebles/Sillas y Sillones de Jardín</td>
+</tr>
+<tr class="row-even"><td>119</td>
+<td>Accesorios</td>
+<td>Default Category/Jardin/Accesorios</td>
+</tr>
+<tr class="row-odd"><td>120</td>
+<td>Macetas</td>
+<td>Default Category/Jardin/Accesorios/Macetas</td>
+</tr>
+<tr class="row-even"><td>121</td>
+<td>Plantas</td>
+<td>Default Category/Jardin/Accesorios/Plantas</td>
+</tr>
+<tr class="row-odd"><td>122</td>
+<td>Sombrillas de Jardin</td>
+<td>Default Category/Jardin/Accesorios/Sombrillas de Jardin</td>
+</tr>
+<tr class="row-even"><td>123</td>
+<td>Lamparas de Jardín</td>
+<td>Default Category/Jardin/Accesorios/Lamparas de Jardín</td>
+</tr>
+<tr class="row-odd"><td>124</td>
+<td>Ni√±os y Bebes</td>
+<td>Default Category/Niños y Bebes</td>
+</tr>
+<tr class="row-even"><td>125</td>
+<td>Ni√±os</td>
+<td>Default Category/Niños y Bebes/Niños</td>
+</tr>
+<tr class="row-odd"><td>126</td>
+<td>Recamaras</td>
+<td>Default Category/Niños y Bebes/Niños/Recamaras</td>
+</tr>
+<tr class="row-even"><td>127</td>
+<td>Literas</td>
+<td>Default Category/Niños y Bebes/Niños/Literas</td>
+</tr>
+<tr class="row-odd"><td>128</td>
+<td>Camas</td>
+<td>Default Category/Niños y Bebes/Niños/Camas</td>
+</tr>
+<tr class="row-even"><td>129</td>
+<td>Burós</td>
+<td>Default Category/Niños y Bebes/Niños/Burós</td>
+</tr>
+<tr class="row-odd"><td>130</td>
+<td>Cajoneras</td>
+<td>Default Category/Niños y Bebes/Niños/Cajoneras</td>
+</tr>
+<tr class="row-even"><td>131</td>
+<td>Escritorios</td>
+<td>Default Category/Niños y Bebes/Niños/Escritorios</td>
+</tr>
+<tr class="row-odd"><td>132</td>
+<td>Libreros</td>
+<td>Default Category/Niños y Bebes/Niños/Libreros</td>
+</tr>
+<tr class="row-even"><td>133</td>
+<td>Bebes</td>
+<td>Default Category/Niños y Bebes/Bebes</td>
+</tr>
+<tr class="row-odd"><td>134</td>
+<td>Cunas</td>
+<td>Default Category/Niños y Bebes/Bebes/Cunas</td>
+</tr>
+<tr class="row-even"><td>135</td>
+<td>Cambiadores</td>
+<td>Default Category/Niños y Bebes/Bebes/Cambiadores</td>
+</tr>
+<tr class="row-odd"><td>136</td>
+<td>Cajoneras</td>
+<td>Default Category/Niños y Bebes/Bebes/Cajoneras</td>
+</tr>
+<tr class="row-even"><td>137</td>
+<td>Mecedoras</td>
+<td>Default Category/Niños y Bebes/Bebes/Mecedoras</td>
+</tr>
+<tr class="row-odd"><td>138</td>
+<td>Comodas</td>
+<td>Default Category/Niños y Bebes/Bebes/Comodas</td>
+</tr>
+<tr class="row-even"><td>139</td>
+<td>Armarios</td>
+<td>Default Category/Niños y Bebes/Bebes/Armarios</td>
+</tr>
+<tr class="row-odd"><td>140</td>
+<td>Decoración</td>
+<td>Default Category/Niños y Bebes/Bebes/Decoración</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="import.html" class="btn btn-neutral float-right" title="Importación De Productos" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="attributes.html" class="btn btn-neutral" title="Atributos / Headers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, G8
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,658 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Atributos / Headers &mdash; documentación de Todomuebles - 1.0.0</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Categorías de Productos" href="categories.html" />
+    <link rel="prev" title="Bienvenido a la Documentación de Todomuebles’s" href="../index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Todomuebles
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Atributos / Headers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="categories.html">Categorías de Productos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import.html">Importación De Productos</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Todomuebles</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Atributos / Headers</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/pages/attributes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="atributos-headers">
+<span id="attribute-page-label"></span><h1>Atributos / Headers<a class="headerlink" href="#atributos-headers" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Acontinuacion se explicaran todos los attributos que contiene el archivo de importe, es importante entender que cada uno de estos attributos pertenece a una columna.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p>Para iniciar la carga de contenido en el Archivo de importacion se debe destacar que hay 4 tipos de atributos.</p>
+<ul class="last simple">
+<li><strong>Constantes:</strong>
+Valores en el excel que no se deben cambiar.</li>
+<li><strong>Requeridos:</strong>
+Estos son los atributos mínimos requeridos para poder hacer un importe de un producto a la tienda de todomuebles.</li>
+<li><strong>Filtrables:</strong>
+Estos attributos estan atados a unas opciones posibles a las cuales se tiene que adaptar, solo se debera popular estos campos con las opciones indicadas en la tabla.</li>
+<li><strong>Opcionales:</strong>
+Attributos opcionales que ir vacios no afecta el importe del archivo.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Advertencia</p>
+<p class="last">Todas las variaciones o agrupaciones de opciones deben ir separados por comas ( , )</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id3">
+<caption><span class="caption-text">Lista de atributos</span><a class="headerlink" href="#id3" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="10%" />
+<col width="45%" />
+<col width="10%" />
+<col width="5%" />
+<col width="30%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">columna</th>
+<th class="head">Descripcion</th>
+<th class="head">Tipo</th>
+<th class="head">Requerido</th>
+<th class="head">Opciones</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>attribute_set_code</td>
+<td>Agrupación del Producto</td>
+<td>Filtrable</td>
+<td>Si</td>
+<td>sala| recamaras</td>
+</tr>
+<tr class="row-odd"><td>product_type</td>
+<td>Clasificación del Producto</td>
+<td>Filtrable</td>
+<td>Si</td>
+<td>simple | configurable</td>
+</tr>
+<tr class="row-even"><td>categories</td>
+<td>Categorias del Producto.</td>
+<td>Filtrable</td>
+<td>Si</td>
+<td>Especificadas en Categorias de Producto</td>
+</tr>
+<tr class="row-odd"><td>product_websites</td>
+<td>Indica wl website</td>
+<td>Constante</td>
+<td>Si</td>
+<td>base</td>
+</tr>
+<tr class="row-even"><td>name</td>
+<td>Nombre del producto</td>
+<td>Requerido</td>
+<td>Si</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>description</td>
+<td>Descripción del producto</td>
+<td>Requerido</td>
+<td>Si</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>short_description</td>
+<td>Descripción resumida del producto</td>
+<td>Requerido</td>
+<td>Si</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>weight</td>
+<td>Peso del producto</td>
+<td>Requerido</td>
+<td>Si</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>visibility</td>
+<td>Visibilidad en el website</td>
+<td>Filtrable</td>
+<td>Si</td>
+<td>Catalog, Search</td>
+</tr>
+<tr class="row-odd"><td>price</td>
+<td>Precio del producto</td>
+<td>Requerido</td>
+<td>Si</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>color</td>
+<td>Color del producto</td>
+<td>Filtrable</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>country_of_manufacture</td>
+<td>Pais de Elaboración</td>
+<td>Filtrable</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>special_price</td>
+<td>Precio rebajado o Especial</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>special_price_from_date</td>
+<td>Fecha inicial de rebaja</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>special_price_to_date</td>
+<td>Fecha Final de Rebaja</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>base_image</td>
+<td>Nombre de la Imagen principal</td>
+<td>Requerido</td>
+<td>Si</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>small_image</td>
+<td>Nombre de la Imagen principal tamaño reducido</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>thumbnail_image</td>
+<td>Nombre de la Imagen previa</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>swatch_image</td>
+<td>Nombre de la Imagen previa</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>additional_images</td>
+<td>Nombre de otras imagenes</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>Imagenes deben ir separadas por comas (,)</td>
+</tr>
+<tr class="row-even"><td>qty</td>
+<td>Cantidad de Inventario</td>
+<td>Requerido</td>
+<td>Si</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>configurable_variations</td>
+<td>Skus de variaciones separadas por comas (,)</td>
+<td>Opcional/Requerido</td>
+<td>&#160;</td>
+<td>Requerido en caso de ser producto configurable</td>
+</tr>
+<tr class="row-even"><td>related_skus</td>
+<td>Skus productos relacionados separadas por comas (,)</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>crosssell_skus</td>
+<td>Skus de productos relacionados relacionados separadas por comas (,)</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>upsell_skus</td>
+<td>Skus de productos relacionados separadas por comas (,)</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>associated_skus</td>
+<td>Skus de productos asociados separadas por comas (,)</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_display_long</td>
+<td>Exhibición Largo/cm</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_display_width</td>
+<td>Exhibición Ancho/cm</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_display_high</td>
+<td>Exhibición Altura/cm</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_display_depth</td>
+<td>Exhibición Profundidad/cm</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_back_type</td>
+<td>Tipo de Respaldo</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_back_material</td>
+<td>Material Respaldo</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_headboard_type</td>
+<td>Tipo de Cabecera</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_headboard_material</td>
+<td>Material Cabecera</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_material</td>
+<td>Material</td>
+<td>Opcional/Filtrable</td>
+<td>&#160;</td>
+<td>tela| piel|microfibra| lino</td>
+</tr>
+<tr class="row-odd"><td>tm_leg_shape</td>
+<td>Forma Pata</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_leg_finished</td>
+<td>Acabado Pata</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_warranty</td>
+<td>Garantía</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_warranty_leg</td>
+<td>Terminos de Garantia</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_brand</td>
+<td>Marca</td>
+<td>Opcional/Filtrable</td>
+<td>&#160;</td>
+<td>Por Defiir</td>
+</tr>
+<tr class="row-even"><td>tm_style</td>
+<td>Estilo</td>
+<td>Opcional/Filtrable</td>
+<td>&#160;</td>
+<td>clasico| rustico| contemporaneo| moderno| minimalista| diconomia| vintage| mid century</td>
+</tr>
+<tr class="row-odd"><td>tm_product_benefits</td>
+<td>Beneficios del Producto</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_include</td>
+<td>Incluye</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>rm_care</td>
+<td>Cuidados</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_delivery_time</td>
+<td>Tiempo de entrega</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_capacity</td>
+<td>Capacidad</td>
+<td>Opcional/Filtrable</td>
+<td>&#160;</td>
+<td>2 personas <a href="#id1"><span class="problematic" id="id2">|</span></a>2 personas | 3 personas | 4 personas | 5 personas</td>
+</tr>
+<tr class="row-even"><td>tm_confort</td>
+<td>Confort</td>
+<td>Opcional/Filtrable</td>
+<td>&#160;</td>
+<td>flex| semiflex| firme</td>
+</tr>
+<tr class="row-odd"><td>tm_include_not</td>
+<td>No incluye</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_number_pieces</td>
+<td>Numero de Piezas</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_require_assembly</td>
+<td>Requiere armado?</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_watts</td>
+<td>Watts</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_voltage</td>
+<td>Voltaje</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_shape</td>
+<td>Forma</td>
+<td>Opcional/Filtrable</td>
+<td>&#160;</td>
+<td>ovalda|circular| cuadrada</td>
+</tr>
+<tr class="row-odd"><td>tm_use_type</td>
+<td>Tipo Uso</td>
+<td>Opcional/Filtrable</td>
+<td>&#160;</td>
+<td>Por Definir</td>
+</tr>
+<tr class="row-even"><td>tm_size</td>
+<td>Tamaño</td>
+<td>Opcional/Filtrable</td>
+<td>&#160;</td>
+<td>chico| mediano|grande| individual| matrimonial| king size| queen size</td>
+</tr>
+<tr class="row-odd"><td>tm_cushion</td>
+<td>Cojines</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_package_long</td>
+<td>Largo con empaque</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_package_height</td>
+<td>alto con empaque</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_package_width</td>
+<td>ancho con empaque</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_tech_type</td>
+<td>Tipo Resorte/Tecnología</td>
+<td>Opcional/Filtrable</td>
+<td>&#160;</td>
+<td>Por Definir</td>
+</tr>
+<tr class="row-even"><td>tm_tech_description</td>
+<td>Descripción Tipo Resorte</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_usage</td>
+<td>Uso Recomendado</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_threads_numbers</td>
+<td>Numero de Hilos</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_grammage</td>
+<td>Gramaje</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_finished_details</td>
+<td>Detalles Terminado</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>tm_max_capacity</td>
+<td>Capacidad Máxima  TV</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>tm_recommended_age</td>
+<td>Edad Recomendada</td>
+<td>Opcional</td>
+<td>&#160;</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="categories.html" class="btn btn-neutral float-right" title="Categorías de Productos" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Bienvenido a la Documentación de Todomuebles’s" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, G8
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
